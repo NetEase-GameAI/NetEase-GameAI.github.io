@@ -21,8 +21,13 @@
 
   <style>
     body {
-      font-family: 'Microsoft Yahei'!important;
+      font-family: 'Microsoft Yahei' !important;
     }
+    .all-wrap {
+      margin: 0 auto;
+      width: 1000px;
+    }
+
     .wf-loading * {
       opacity: 0;
     }
@@ -34,15 +39,27 @@
     .nerf_network {
       width: 100%;
     }
-    .nerf_affiliation_v2 {
-      font-weight: bold;
+
+    .nerf_affiliation_v2, .nerf_affiliation_v3 {
+      font-size: 20px;
+      line-height: 24px;
     }
-    .nerf_title_v2, .white_section_nerf {
-      font-family: fangsong,'Microsoft Yahei';
+
+    .nerf_title_v2,
+    .white_section_nerf {
+      font-family: fangsong, 'Microsoft Yahei';
       color: #3c3c3c;
     }
+
     .long-text {
-      font-family: serif!important;
+      font-family: serif !important;
+      font-size: 20px!important;
+    }
+    .bibtex {
+      font-size: 16px;
+    }
+    .bold-text-nerf_v2 {
+      font-size: 16px;
     }
     @media screen and (min-width: 1600px) {
       .w-container {
@@ -53,194 +70,185 @@
 </head>
 
 <body>
-  <div class="section hero nerf-_v2">
-    <div class="container-2 nerf_header_v2 w-container">
-      <h1 class="nerf_title_v2">ChoreoMaster : Choreography-Oriented Music-Driven Dance Synthesis</h1>
-      <h1 class="nerf_subheader_v2">SIGGRAPH 2021</h1>
-      <div class="nerf_authors_list_single w-row">
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Kang Chen</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Zhipeng Tan</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Jin Lei</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Song-Hai Zhang</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Yuan-Chen Guo</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Weidong Zhang</h1>
-        </div>
-        <div class="w-col w-col-seven ">
-          <h1 class="nerf_affiliation_v2">Shi-Min Hu</h1>
-        </div>
-      </div>
-      <!--           <div class="columns-6 w-row"><div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4">
-            <div class="nerf_mobile_inst"><span class="text-span_nerf">1 </span>Beijing Film Academy</div></div>
-            <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">2</span>Peking University</div></div>
-            <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">3</span>Hebrew University</div></div>
-            <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">4</span>ETH Zurich</div></div>
-            <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">5</span>Tel-Aviv University</div></div>
-          </div> -->
-      <div class="nerf_authors_list_single nerf_authors_affiliation w-row">
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">NetEase AI LAB</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">NetEase AI LAB</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">NetEase AI LAB</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">Tsinghua University</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">Tsinghua University</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">NetEase AI LAB</h1>
-        </div>
-        <div class="w-col w-col-seven">
-          <h1 class="nerf_affiliation_v3">Tsinghua University</h1>
-        </div>
-      </div>
-
-
-      <div>
-        <span class="center"><img src="images/choreo_teaser.png"></span>
-
-      </div>
-      <div class="w-container w-row">
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <a href="./Paper.pdf" target="_blank" class="link-block w-inline-block">
-            <img src="./images/paper.png" alt="paper" class="paper_img image-8 github_icon_nerf_v2" /></a>
-        </div>
-        <div class="column-2 w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <a href="./Supplemental/ChoreoMaster_UserStudy.mp4" target="_blank" class="link-block w-inline-block">
-            <img src="./images/video.png" alt="video" class="paper_img image-8 github_icon_nerf_v2" /></a>
-        </div>
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <a href="./Supplemental.pdf" target="_blank" class="link-block w-inline-block">
-            <img src="./images/supplemental.png" alt="Supplemental" class="paper_img image-8 github_icon_nerf_v2" /></a>
-        </div>
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <a href="#" target="_blank" class="link-block w-inline-block">
-            <img src="./images/data.png" alt="data" class="paper_img image-8 github_icon_nerf_v2" /></a>
-        </div>
-      </div>
-      <div class="w-container w-row">
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <div class="text-block-2"><strong class="bold-text-nerf_v2">Paper</strong></div>
-        </div>
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <div class="text-block-2">
-            <strong class="bold-text-nerf_v2">Supplemental Video</strong>
+  <div class="all-wrap">
+    <div class="section hero nerf-_v2">
+      <div class="container-2 nerf_header_v2 w-container">
+        <h1 class="nerf_title_v2">ChoreoMaster : Choreography-Oriented Music-Driven Dance Synthesis</h1>
+        <h1 class="nerf_subheader_v2">SIGGRAPH 2021</h1>
+        <div class="nerf_authors_list_single w-row">
+          <div class="w-col w-col-3 ">
+            <h1 class="nerf_affiliation_v2">Kang Chen<sup>1</sup></h1>
+          </div>
+          <div class="w-col w-col-3 ">
+            <h1 class="nerf_affiliation_v2">Zhipeng Tan<sup>1</sup></h1>
+          </div>
+          <div class="w-col w-col-3 ">
+            <h1 class="nerf_affiliation_v2">Jin Lei<sup>1</sup></h1>
+          </div>
+          <div class="w-col w-col-3 ">
+            <h1 class="nerf_affiliation_v2">Song-Hai Zhang<sup>2</sup></h1>
           </div>
         </div>
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <div class="text-block-2"><strong class="bold-text-nerf_v2">Supplemental Document</strong></div>
+        <div class="w-row">
+          <div class="w-col w-col-4 ">
+            <h1 class="nerf_affiliation_v2">Yuan-Chen Guo<sup>2</sup></h1>
+          </div>
+          <div class="w-col w-col-4 ">
+            <h1 class="nerf_affiliation_v2">Weidong Zhang<sup>1</sup></h1>
+          </div>
+          <div class="w-col w-col-4 ">
+            <h1 class="nerf_affiliation_v2">Shi-Min Hu<sup>2</sup></h1>
+          </div>
         </div>
-        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-          <div class="text-block-2"><strong class="bold-text-nerf_v2">Data (Comming soon)</strong></div>
+        <!--           <div class="columns-6 w-row"><div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4">
+              <div class="nerf_mobile_inst"><span class="text-span_nerf">1 </span>Beijing Film Academy</div></div>
+              <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">2</span>Peking University</div></div>
+              <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">3</span>Hebrew University</div></div>
+              <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">4</span>ETH Zurich</div></div>
+              <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">5</span>Tel-Aviv University</div></div>
+            </div> -->
+        <div class="nerf_authors_list_single nerf_authors_affiliation w-row" style="margin-top: 15px;">
+          <div class="w-col w-col-12">
+            <h1 class="nerf_affiliation_v3"><sup>1</sup>NetEase AI LAB</h1>
+          </div>
+          <div class="w-col w-col-12">
+            <h1 class="nerf_affiliation_v3"><sup>2</sup>Tsinghua University</h1>
+          </div>
+        </div>
+
+
+        <div>
+          <span class="center"><img src="images/choreo_teaser.png"></span>
+
+        </div>
+        <div class="w-container w-row">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <a href="./Paper.pdf" target="_blank" class="link-block w-inline-block">
+              <img src="./images/paper.png" alt="paper" class="paper_img image-8 github_icon_nerf_v2" /></a>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <a href="./Supplemental.pdf" target="_blank" class="link-block w-inline-block">
+              <img src="./images/supplemental.png" alt="Supplemental"
+                class="paper_img image-8 github_icon_nerf_v2" /></a>
+          </div>
+          <div class="column-2 w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <a href="./Supplemental/ChoreoMaster_UserStudy.mp4" target="_blank" class="link-block w-inline-block">
+              <img src="./images/video.png" alt="video" class="paper_img image-8 github_icon_nerf_v2" /></a>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <a href="#" target="_blank" class="link-block w-inline-block">
+              <img src="./images/data.png" alt="data" class="paper_img image-8 github_icon_nerf_v2" /></a>
+          </div>
+        </div>
+        <div class="w-container w-row">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <div class="text-block-2"><strong class="bold-text-nerf_v2">Paper</strong></div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <div class="text-block-2"><strong class="bold-text-nerf_v2">Supplemental Document</strong></div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <div class="text-block-2">
+              <strong class="bold-text-nerf_v2">User Study Video</strong>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <div class="text-block-2"><strong class="bold-text-nerf_v2">Data (Comming soon)</strong></div>
+          </div>
+        </div>
+        <div class="nerf_slide_nav w-slider-nav w-slider-nav-invert w-round"></div>
+      </div>
+    </div>
+
+    <div data-anchor="slide1" class="section nerf_section">
+      <div class="w-container">
+        <div style="padding-top:56.17021276595745%" id="w-node-e5e45b1d55ac-81500a5f"
+          class="w-embed-youtubevideo stega_movie youtube">
+          <!--                        <iframe src="https://www.youtube.com/embed/V8MlYa_yhF0" title="YouTube video player" frameBorder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
+          <iframe src="./Supplemental/ChoreoMaster_Overview.mp4" title="YouTube video player" frameBorder="0"
+            style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"
+            allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
         </div>
       </div>
-      <div class="nerf_slide_nav w-slider-nav w-slider-nav-invert w-round"></div>
     </div>
-  </div>
-
-  <div data-anchor="slide1" class="section nerf_section">
-    <div class="w-container">
-      <h2 class="white_section_nerf">Paper Overview</h2>
-      <div style="padding-top:56.17021276595745%" id="w-node-e5e45b1d55ac-81500a5f"
-        class="w-embed-youtubevideo stega_movie youtube">
-        <!--                        <iframe src="https://www.youtube.com/embed/V8MlYa_yhF0" title="YouTube video player" frameBorder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
-        <iframe src="./Supplemental/ChoreoMaster_Overview.mp4" title="YouTube video player" frameBorder="0"
-          style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"
-          allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+    <hr/>
+    <div data-anchor="slide1" class="section nerf_section">
+      <div class="w-container">
+        <h2 class="white_section_nerf">Abstract</h2>
+        <p class="paragraph-3 nerf_text long-text">Despite strong demand in the game and film industry, automatically
+          synthesizing
+          high-quality dance motions remains a challenging task. In this paper, we present ChoreoMaster, a
+          production-ready music-driven dance motion synthesis system. Given a piece of music, ChoreoMaster can
+          automatically generate a high-quality dance motion sequence to accompany the input music in terms of style,
+          rhythm and structure.To achieve this goal, we introduce a novel choreography-oriented choreomusical embedding
+          framework, which successfully constructs a unified choreomusical embedding space for both style and rhythm
+          relationships between music and dance phrases. The learned choreomusical embedding is then incorporated into a
+          novel choreography-oriented graph-based motion synthesis framework, which can robustly and efficiently
+          generate
+          high-quality dance motions following various choreographic rules. As a production-ready system, ChoreoMaster
+          is
+          sufficiently controllable and comprehensive for users to produce desired results. Experimental results
+          demonstrate that dance motions generated by ChoreoMaster are accepted by professional artists. </p>
       </div>
     </div>
-  </div>
-  <div data-anchor="slide1" class="section nerf_section">
+
     <div class="w-container">
-      <h2 class="white_section_nerf">Abstract</h2>
-      <p class="paragraph-3 nerf_text long-text">Despite strong demand in the game and film industry, automatically synthesizing
-        high-quality dance motions remains a challenging task. In this paper, we present ChoreoMaster, a
-        production-ready music-driven dance motion synthesis system. Given a piece of music, ChoreoMaster can
-        automatically generate a high-quality dance motion sequence to accompany the input music in terms of style,
-        rhythm and structure.To achieve this goal, we introduce a novel choreography-oriented choreomusical embedding
-        framework, which successfully constructs a unified choreomusical embedding space for both style and rhythm
-        relationships between music and dance phrases. The learned choreomusical embedding is then incorporated into a
-        novel choreography-oriented graph-based motion synthesis framework, which can robustly and efficiently generate
-        high-quality dance motions following various choreographic rules. As a production-ready system, ChoreoMaster is
-        sufficiently controllable and comprehensive for users to produce desired results. Experimental results
-        demonstrate that dance motions generated by ChoreoMaster are accepted by professional artists. </p>
+      <span class="center"><img src="./images/choreo_overview.PNG" alt="" class="nerf_network" /></span>
     </div>
-  </div>
-
-  <div class="w-container">
-    <span class="center"><img src="./images/choreo_overview.PNG" alt="" class="nerf_network" /></span>
-  </div>
-
-  <div data-anchor="slide1" class="section nerf_section">
-    <div class="w-container">
-      <h2 class="white_section_nerf">More Results</h2>
+    <hr/>
+    <div data-anchor="slide1" class="section nerf_section">
+      <div class="w-container">
+        <h2 class="white_section_nerf">More Results</h2>
+      </div>
     </div>
-  </div>
-  <div class="w-container w-row">
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result1.mp4" type="video/mp4">
-      </video>
+    <div class="w-container w-row">
+      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column-2 w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result4.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result5.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column-2 w-col w-col-6 w-col-small-6 w-col-tiny-12">
+        <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
+          <source src="./Results/Result6.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result2.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result3.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="column-2 w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result4.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result5.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="column-2 w-col w-col-6 w-col-small-6 w-col-tiny-12">
-      <video class="results" loop="" playsinline="" controls="" width="100%" onloadstart="this.volume=0.1">
-        <source src="./Results/Result6.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-
-
-  <div class="white_section_nerf">
-    <div class="w-container">
-      <h2 class="grey-heading_nerf">BibTeX</h2>
-      <div class="grey_container w-container">
-        <div class="bibtex">
-          <pre><code>@article{choreomaster2021,
-  author = {Chen Kang, Zhipeng Tan, Jin Lei, Song-Hai Zhang, Yuan-Chen Guo, Weidong Zhang, Shi-Min Hu},
-  title = {ChoreoMaster : Choreography-Oriented Music-Driven Dance Synthesis},
-  journal = {ACM Transactions on Graphics (TOG)},
-  volume = {40},
-  number = {4},
-  year = {2021},
-  publisher = {ACM}
-}</code></pre>
+    <hr/>
+    <div class="white_section_nerf">
+      <div class="w-container">
+        <h2 class="grey-heading_nerf">BibTeX</h2>
+        <div class="grey_container w-container">
+          <div class="bibtex">
+            <pre><code>@article{choreomaster2021,
+    author = {Chen Kang, Zhipeng Tan, Jin Lei, Song-Hai Zhang, Yuan-Chen Guo, Weidong Zhang, Shi-Min Hu},
+    title = {ChoreoMaster : Choreography-Oriented Music-Driven Dance Synthesis},
+    journal = {ACM Transactions on Graphics (TOG)},
+    volume = {40},
+    number = {4},
+    year = {2021},
+    publisher = {ACM}
+  }</code></pre>
+          </div>
         </div>
       </div>
     </div>
