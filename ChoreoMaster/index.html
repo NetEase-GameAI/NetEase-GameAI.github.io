@@ -23,6 +23,7 @@
     body {
       font-family: 'Microsoft Yahei' !important;
     }
+
     .all-wrap {
       margin: 0 auto;
       width: 1000px;
@@ -40,7 +41,8 @@
       width: 100%;
     }
 
-    .nerf_affiliation_v2, .nerf_affiliation_v3 {
+    .nerf_affiliation_v2,
+    .nerf_affiliation_v3 {
       font-size: 20px;
       line-height: 24px;
     }
@@ -52,18 +54,53 @@
     }
 
     .long-text {
-      font-family: serif !important;
-      font-size: 20px!important;
+      font-family: monospace !important;
+      font-size: 20px !important;
     }
+
     .bibtex {
       font-size: 16px;
     }
+
     .bold-text-nerf_v2 {
       font-size: 16px;
     }
-    @media screen and (min-width: 1600px) {
-      .w-container {
-        max-width: 1200px;
+
+    .row-name {
+      text-align: center;
+    }
+
+    .name-wrap {
+      display: none;
+    }
+
+    @media screen and (max-width: 479px) {
+      .row-name {
+        display: none;
+      }
+
+      .name-wrap {
+        display: block;
+      }
+      .name-unit {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+      }
+      .nerf_title_v2 {
+        font-size: 45px;
+        width: 850px;
+        margin-bottom: 10px;
+      }
+
+      .nerf_subheader_v2 {
+        font-size: 6vw;
+        margin-bottom: 20px;
+      }
+
+      .long-text {
+        font-size: 26px !important;
+        line-height: 26px !important;
       }
     }
   </style>
@@ -75,30 +112,25 @@
       <div class="container-2 nerf_header_v2 w-container">
         <h1 class="nerf_title_v2">ChoreoMaster : Choreography-Oriented Music-Driven Dance Synthesis</h1>
         <h1 class="nerf_subheader_v2">SIGGRAPH 2021</h1>
-        <div class="nerf_authors_list_single w-row">
-          <div class="w-col w-col-3 ">
-            <h1 class="nerf_affiliation_v2">Kang Chen<sup>1</sup></h1>
-          </div>
-          <div class="w-col w-col-3 ">
-            <h1 class="nerf_affiliation_v2">Zhipeng Tan<sup>1</sup></h1>
-          </div>
-          <div class="w-col w-col-3 ">
-            <h1 class="nerf_affiliation_v2">Jin Lei<sup>1</sup></h1>
-          </div>
-          <div class="w-col w-col-3 ">
-            <h1 class="nerf_affiliation_v2">Song-Hai Zhang<sup>2</sup></h1>
-          </div>
+        <div class="nerf_authors_list_single w-row row-name">
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Kang Chen<sup>1</sup></h1>
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Zhipeng Tan<sup>1</sup></h1>
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Jin Lei<sup>1</sup></h1>
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Song-Hai Zhang<sup>2</sup></h1>
         </div>
-        <div class="w-row">
-          <div class="w-col w-col-4 ">
-            <h1 class="nerf_affiliation_v2">Yuan-Chen Guo<sup>2</sup></h1>
-          </div>
-          <div class="w-col w-col-4 ">
-            <h1 class="nerf_affiliation_v2">Weidong Zhang<sup>1</sup></h1>
-          </div>
-          <div class="w-col w-col-4 ">
-            <h1 class="nerf_affiliation_v2">Shi-Min Hu<sup>2</sup></h1>
-          </div>
+        <div class="w-row row-name">
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Yuan-Chen Guo<sup>2</sup></h1>
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Weidong Zhang<sup>1</sup></h1>
+          <h1 class="nerf_affiliation_v2" style="margin-right: 15px;">Shi-Min Hu<sup>2</sup></h1>
+        </div>
+        <div class="name-wrap">
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Kang Chen, NetEase Games AI LAB</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Zhipeng Tan, NetEase Games AI LAB</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Jin Lei, NetEase Games AI LAB</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Song-Hai Zhang, Tsinghua University</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Yuan-Chen Guo, Tsinghua University</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Weidong Zhang, NetEase Games AI LAB</h1>
+          <h1 class="nerf_affiliation_v2 name-unit" style="margin-right: 15px;">Shi-Min Hu, Tsinghua University</h1>
         </div>
         <!--           <div class="columns-6 w-row"><div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4">
               <div class="nerf_mobile_inst"><span class="text-span_nerf">1 </span>Beijing Film Academy</div></div>
@@ -107,13 +139,10 @@
               <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">4</span>ETH Zurich</div></div>
               <div class="nerf_mobile_col_inst w-col w-col-4 w-col-small-4 w-col-tiny-4"><div class="nerf_mobile_inst"><span class="text-span_nerf">5</span>Tel-Aviv University</div></div>
             </div> -->
-        <div class="nerf_authors_list_single nerf_authors_affiliation w-row" style="margin-top: 15px;">
-          <div class="w-col w-col-12">
-            <h1 class="nerf_affiliation_v3"><sup>1</sup>NetEase AI LAB</h1>
-          </div>
-          <div class="w-col w-col-12">
-            <h1 class="nerf_affiliation_v3"><sup>2</sup>Tsinghua University</h1>
-          </div>
+        <div class="nerf_authors_list_single nerf_authors_affiliation w-row"
+          style="margin-top: 15px;text-align: center;">
+          <h1 class="nerf_affiliation_v3" style="margin-right: 40px"><sup>1</sup>NetEase Games AI LAB</h1>
+          <h1 class="nerf_affiliation_v3"><sup>2</sup>Tsinghua University</h1>
         </div>
 
 
@@ -171,7 +200,7 @@
         </div>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div data-anchor="slide1" class="section nerf_section">
       <div class="w-container">
         <h2 class="white_section_nerf">Abstract</h2>
@@ -195,7 +224,7 @@
     <div class="w-container">
       <span class="center"><img src="./images/choreo_overview.PNG" alt="" class="nerf_network" /></span>
     </div>
-    <hr/>
+    <hr />
     <div data-anchor="slide1" class="section nerf_section">
       <div class="w-container">
         <h2 class="white_section_nerf">More Results</h2>
@@ -233,7 +262,7 @@
         </video>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div class="white_section_nerf">
       <div class="w-container">
         <h2 class="grey-heading_nerf">BibTeX</h2>
