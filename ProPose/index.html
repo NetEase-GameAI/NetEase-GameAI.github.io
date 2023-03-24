@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning Analytical Posterior Probability for Human Mesh Recovery">
+  <meta name="keywords" content="3D Human Pose, Probability Representation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Analytical Posterior Probability for Human Mesh Recovery</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/assets/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning Analytical Posterior Probability for Human Mesh Recovery</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Qi Fang<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Kang Chen<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Yinghui Fan<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Qing Shuai<sup>2</sup>,&nbsp;</span>
+            <span class="author-block">
+              Jiefeng Li<sup>3</sup>,&nbsp;</span>
+            <span class="author-block">
+              Weidong Zhang<sup>1</sup></span>
+          </div>
+            
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>NetEase Games AI Lab,&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Zhejiang University,&nbsp;</span>
+            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/NetEase-GameAI/ProPose"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="content has-text-justified">
+    <img src="./static/assets/top.png">
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite various probabilistic methods for modeling the uncertainty and ambiguity in human mesh recovery, their overall precision is limited because existing formulations for joint rotations are either not constrained to SO(3) or difficult to learn for neural networks. To address such an issue, we derive a novel analytical formulation for learning posterior probability distributions of human joint rotations conditioned on bone directions in a Bayesian manner, and based on this, we propose a new posterior-guided framework for human mesh recovery. We demonstrate that our framework is not only superior to existing SOTA baselines on multiple benchmarks but also flexible enough to seamlessly incorporate with additional sensors due to its Bayesian nature.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- TODO: -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src=""
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Human Mesh Recovery</h2>
+          <p>
+            Results of human mesh recovery on Internet videos.
+          </p>
+          <video id="hmr-video" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/hmr.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Fusion. -->
+      <div class="column">
+        <h2 class="title is-3">Multi-Sensor Fusion</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Results of fusing IMUs and a camera.
+            </p>
+            <video style="width:100%; height: 73.5%; object-fit: fill" id="imu-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/assets/imu.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Fusion. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{fang2023propose,
+  title     = {Learning Analytical Posterior Probability for Human Mesh Recovery},
+  author    = {Fang, Qi and Chen, Kang and Fan, Yinghui and Shuai, Qing and Li, Jiefeng and Zhang, Weidong},
+  booktitle = {CVPR},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code of this website is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
