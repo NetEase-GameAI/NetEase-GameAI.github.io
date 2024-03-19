@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Capturing Closely Interacted Two-Person Motions with Reaction Priors">
+  <meta name="keywords" content="Two-Person Interaction, Motion Capture">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dual-Human</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/assets/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Capturing Closely Interacted Two-Person Motions with Reaction Priors</h1>
+          <h1 style="color:#5a6268;" class="title is-4 publication-title">CVPR 2024</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Qi Fang<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Yinghui Fan<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Yanjun Li<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">
+              Junting Dong<sup>2</sup>,&nbsp;</span>
+            <span class="author-block">
+              Dingwei Wu<sup>1</sup>,</span>
+            <span class="author-block">
+              Weidong Zhang<sup>1</sup>,</span>
+            <span class="author-block">
+              Kang Chen<sup>1</sup></span>
+          </div>
+            
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>NetEase Games AI Lab,&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Shanghai AI Lab&nbsp;</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/assets/CVPR2024_DualHuman.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Supp Mat Link. -->
+              <span class="link-block">
+                <a href="./static/assets/DualHuman_supp_mat.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supp. Mat.</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dual-Human Dataset (coming soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="content has-text-justified">
+    <img src="./static/assets/overview.png">
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/play3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/dance3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/shoulder2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/help2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/shake9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/assets/play2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we focus on capturing closely interacted two-person motions from monocular videos, an important yet understudied topic. Unlike less-interacted motions, closely interacted motions contain frequently occurring inter-human occlusions, which pose significant challenges to existing capturing algorithms. To address this problem, our key observation is that close physical interactions between two subjects typically happen under very specific situations (e.g., handshake, hug, etc.), and such situational contexts contain strong prior semantics to help infer the poses of occluded joints. In this spirit, we introduce reaction priors, which are invertible neural networks that bi-directionally model the pose probability distributions of one person given the pose of the other. The learned reaction priors are then incorporated into a query-based pose estimator, which is a decoder-only Transformer with self-attentions on both intra-joint and inter-joint relationships. We demonstrate that our design achieves considerably higher performance than previous methods on multiple benchmarks. What's more, as existing datasets lack sufficient cases of close human-human interactions, we also build a new dataset called Dual-Human to better evaluate different methods. Dual-Human contains around 2k sequences of closely interacted two-person motions, each with synthetic multi-view renderings, contact annotations, and text descriptions. We believe that this new public dataset can significantly promote further research in this area.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="./static/assets/1073_supp.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{fang2024dualhuman,
+  title     = {Capturing Closely Interacted Two-Person Motions with Reaction Priors},
+  author    = {Fang, Qi and Fan, Yinghui and Li, Yanjun and Dong, Junting and Wu, Dingwei and Zhang, Weidong and Chen, Kang},
+  booktitle = {CVPR},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code of this website is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
